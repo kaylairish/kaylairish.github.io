@@ -2,7 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
+nav: false # TODO: set to true once you have a real post to publish
 nav_order: 1
 pagination:
   enabled: true

@@ -2,11 +2,22 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Courses taught and assisted at the University of Washington.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+### Instructor of Record
 
-Organize your courses by years, topics, or universities, however you like!
+**STAT/MATH 395: Probability II** — University of Washington, Summer 2024
+Joint and conditional distributions; concentration inequalities; asymptotic statistics. 50 students; median course evaluation score of 4.9/5. Lecture notes built on materials originally developed by Harshil Desai.
+
+### Teaching Assistant
+
+**STAT/MATH 220: Statistical Reasoning** — University of Washington
+Fall 2022, Spring 2023, Summer 2023
+
+**STAT/MATH 221: Statistical Concepts and Methods for the Social Sciences** — University of Washington
+Winter 2023
+
+<!-- TODO: link lecture notes / syllabi here if you want to share materials publicly. -->
