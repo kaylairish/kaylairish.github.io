@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Serve the site locally with live reload at http://localhost:4000
+set -euo pipefail
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$GEM_HOME/bin:$PATH"
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+cd "$(dirname "$0")/.."
+bundle exec jekyll serve

@@ -167,6 +167,7 @@ kramdown:
 include: ["_pages", "_scripts"]
 exclude:
   - bin/
+  - CLAUDE.md
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
@@ -178,9 +179,9 @@ exclude:
   - INSTALL.md
   - LICENSE
   - lighthouse_results/
+  - me.tex
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -618,9 +619,13 @@ third_party_libraries:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
+# jekyll_get_json / jsonresume: al-folio supports sourcing the CV page from a
+# JSON Resume file instead of _data/cv.yml. This site uses _data/cv.yml (see
+# CLAUDE.md), so this is disabled — the CV layout falls back to site.data.cv
+# only when site.data.resume is unset.
+# jekyll_get_json:
+#   - data: resume
+#     json: assets/json/resume.json # it can also be an url
 
 jsonresume:
   - basics

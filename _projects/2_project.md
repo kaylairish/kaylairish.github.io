@@ -1,12 +1,10 @@
 ---
 layout: page
-title: The Intensity of Stasis
-description: Book contribution — simulations, writing, and figures
+title: Political Violence in Ancient Greece
+description: Book contribution — modeled survival data and designed figures
 img:
 importance: 2
 category: work
 ---
 
-Between 2022 and 2024, I authored simulations, wrote text sections, and designed twelve figures for Chapter 12 of Dr. Scott Arcenas' book *The Intensity of Stasis* (manuscript under review).
-
-<!-- TODO: link to the book/preprint once it's published. -->
+From 2022 to 2025, I modeled survival data and designed figures for Dr. Scott Arcenas' book *Political Violence in Ancient Greece*, published November 2025.
