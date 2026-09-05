@@ -142,7 +142,13 @@
 % new command for external links:
 \renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
 
-
+% separator used between header contact items:
+\newcommand{\AND}{\unskip
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
 
 \begin{document}
 
@@ -173,7 +179,7 @@
 
 \begin{onecolentry}
     \begin{highlights}
-        \item[] Advisor: Dr. Alex Luedke, Department of Health Care Policy, Harvard University
+        \item[] Advisor: Dr. Alex Luedtke, Departments of Health Care Policy, Statistics, Harvard University
         \item[] Developing interpretable covariate-adjusted estimators for clinical trials using weighting methods
         \item[] 2025-2026 FDA Oncology Center of Excellence Fellow
         \item[] \textbf{Coursework}: Design and analysis of clinical trials, survival analysis, missing data, statistical theory
@@ -268,7 +274,7 @@ For Dr. Scott Arcenas, University of Montana Department of History
 \section{Publications}
 \begin{onecolentry}
     \begin{enumerate}
-        \item \textbf{Irish, K.}, Zubizarreta, J., \& Luedtke, A. (2026). Simple Covariate Adjustment for Many Estimands Using Stable Balancing Weights. \textit{\href{https://arxiv.org/abs/2609.01638}{arXiv preprint arXiv:2609.01638}}.
+        \item \textbf{Irish, K.}, Zubizarreta, J.R., \& Luedtke, A. (2026). Simple Covariate Adjustment for Many Estimands Using Stable Balancing Weights. \textit{\href{https://arxiv.org/abs/2609.01638}{arXiv preprint arXiv:2609.01638}}.
         \item Newcomer, S. R., Graham, J., \textbf{Irish, K.}, Freeman, R. E., Leary, C. S., Wehner, B. K., \& Daley, M. F. (2024). Identification of spatial clusters of undervaccination patterns among children aged $<$24 months using immunization information system data, Montana, 2015--2019. \textit{Public Health Reports}, 139(3), 360--368.
         \item \textbf{Irish, K.*}, Colligan, T.*, Emlen, D.J., Wheeler, T.J. (2023). DISCO: A deep learning ensemble for uncertainty-aware segmentation of acoustic signals. \textit{PLoS ONE}, 18(7): e0288172. (* equal contribution)
     \end{enumerate}
@@ -309,7 +315,7 @@ For Dr. Scott Arcenas, University of Montana Department of History
 \end{twocolentry}
 \begin{onecolentry}
     \begin{highlights}
-        \item[] For talk at Western North American Region (WNAR) of The International Biometric Society Conference Student Paper Competition
+        \item[] For talk at WNAR of The International Biometric Society Conference Student Paper Competition
     \end{highlights}
 \end{onecolentry}
 
@@ -324,6 +330,10 @@ For Dr. Scott Arcenas, University of Montana Department of History
 \textbf{Simple Covariate Adjustment Using Stable Balancing Weights}
 
 \vspace{3 mm}
+
+\begin{twocolentry}{North Chicago; Aug. 2026}
+    AbbVie Statistical Innovation Bi-Weekly Seminar
+\end{twocolentry}
 
 \begin{twocolentry}{Indianapolis; Mar. 2026}
     ENAR of the International Biometric Society Contributed Session
@@ -347,11 +357,14 @@ For Dr. Scott Arcenas, University of Montana Department of History
 \begin{twocolentry}{}
     \textbf{Teaching Assistant - Graduate Courses}
 \end{twocolentry}
-\begin{twocolentry}{Fall 2025}
-    \hspace{3 mm} Hierarchical Modeling (STAT 560)
+\begin{twocolentry}{Fall 2026}
+    \hspace{3 mm} Introduction to Statistics and Probability (DATA 556)
 \end{twocolentry}
 \begin{twocolentry}{Spring 2025 \& 2026}
     \hspace{3 mm} Measure Theory (STAT 559)
+\end{twocolentry}
+\begin{twocolentry}{Fall 2025}
+    \hspace{3 mm} Hierarchical Modeling (STAT 560)
 \end{twocolentry}
 
 

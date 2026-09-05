@@ -4,6 +4,19 @@
 
 // Typography
 
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Newsreader", Georgia, serif;
+}
+
 p,
 h1,
 h2,
@@ -35,9 +48,14 @@ table {
   }
 }
 
+.name-accent {
+  color: var(--global-theme-color);
+}
+
 a,
 table.table a {
   color: var(--global-theme-color);
+  font-weight: 600;
 
   &:hover {
     color: var(--global-theme-color);
@@ -198,7 +216,6 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
 
     p {
       display: inline-block;

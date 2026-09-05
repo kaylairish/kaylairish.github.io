@@ -2,16 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Candidate, Department of Statistics, University of Washington
 
 profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Department of Statistics</p>
-    <p>University of Washington</p>
-    <p>Seattle, WA</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +22,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD student in the [Department of Statistics](https://stat.uw.edu/) at the University of Washington (expected graduation June 2027), advised by [Alex Luedtke](https://www.alexluedtke.com/) (Department of Health Care Policy, Harvard University). My research focuses on the design and analysis of clinical trials, covariate adjustment, and oncology trial methodology — including surrogate endpoints, go/no-go decision-making, and stratified randomization.
+I am a fifth-year PhD student in the [Department of Statistics](https://stat.uw.edu/) at the University of Washington, advised by [Alex Luedtke](https://www.alexluedtke.com/) (Departments of Health Care Policy and Statistics, Harvard University). My research focuses on the design and analysis of clinical trials and covariate adjustment. More broadly, I'm interested in survival analysis, early and intermediate endpoints, and go/no-go decision-making.
 
-As a 2025–2026 [FDA Oncology Center of Excellence Fellow](https://stat.uw.edu/news-resources/articles/kayla-irish-receives-fda-oce-asa-oncology-educational-fellowship), I learned about regulatory policy and the practical challenges of oncology drug development. I've since interned as a graduate biostatistician at AbbVie (Summer 2026), simulating go/no-go operating characteristics with Bayesian hierarchical modeling and propensity score methods, and at Johnson & Johnson Innovative Medicine (Summer 2025), working on surrogate analysis of time-to-event endpoints to inform oncology trial decisions. Before UW, I earned B.A.s in Mathematics and History from the University of Montana, where I worked as a research assistant studying spatial patterns of childhood undervaccination.
+I've pursued these interests specifically in oncology trials, through a fellowship and an industry internship. As a 2025–2026 [FDA Oncology Center of Excellence Fellow](https://stat.uw.edu/news-resources/articles/kayla-irish-receives-fda-oce-asa-oncology-educational-fellowship), I learned about regulatory policy and the practical challenges of oncology drug development. As a graduate biostatistician intern at Johnson & Johnson Innovative Medicine (Summer 2025), I used surrogate analysis of time-to-event endpoints to inform go/no-go decisions for a potential Phase III oncology trial. I've also worked on go/no-go decision-making more broadly: at AbbVie (Summer 2026), I used Bayesian hierarchical modeling and propensity score methods to borrow historical control data for more precise go/no-go decisions across all of AbbVie's therapeutic areas.
 
-I also work as a statistical consultant for the UW Statistics and Biostatistics departments, advising clients on experimental design, data wrangling in R, and regression/model interpretation.
+Before UW, I earned B.A.s in Mathematics and History from the University of Montana.
