@@ -30,12 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "projects-statistical-consulting",
+        },{id: "projects-statistical-consulting",
           title: 'Statistical Consulting',
           description: "UW Statistics &amp; Biostatistics consulting",
           section: "Projects",handler: () => {
