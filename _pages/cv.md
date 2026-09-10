@@ -4,8 +4,11 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-description: <a href="/assets/pdf/Kayla_Irish_CV.pdf" target="_blank" rel="noopener noreferrer">Open in a new tab / download &rarr;</a>
 ---
+
+<p class="cv-actions">
+  <a href="{{ '/assets/pdf/Kayla_Irish_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Open in a new tab / download &rarr;</a>
+</p>
 
 <div id="cv-viewer" class="cv-viewer" data-pdf="{{ '/assets/pdf/Kayla_Irish_CV.pdf' | relative_url }}">
   <p class="cv-viewer-status">Loading CV&hellip;</p>
@@ -16,6 +19,10 @@ description: <a href="/assets/pdf/Kayla_Irish_CV.pdf" target="_blank" rel="noope
 </noscript>
 
 <style>
+  .cv-actions {
+    margin-bottom: 1.5rem;
+  }
+
   .cv-viewer {
     max-width: 100%;
   }
