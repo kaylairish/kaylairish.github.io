@@ -2,7 +2,8 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: false # TODO: set to true once you have a real post to publish
+published: false # TODO: set to true (and flip nav below) to launch the blog
+nav: false
 nav_order: 1
 pagination:
   enabled: true
