@@ -17,7 +17,7 @@ If `bin/preview` fails with a missing-gem error, run `bundle install` first (sam
 ## Environment gotchas
 
 - **System Ruby is too old.** macOS ships Ruby 2.6, which can't resolve al-folio's gem dependencies cleanly. A modern Ruby is installed via Homebrew at `/usr/local/opt/ruby/bin` — this is what `bin/preview` puts first on `PATH`. It's also set up in `~/.bash_profile`, so a plain `bundle exec jekyll serve` works in any new terminal without extra setup.
-- **`GEM_HOME` must be recomputed after changing `PATH`.** `~/.bashrc` sets `GEM_HOME` by shelling out to `ruby -e 'puts Gem.user_dir'` — but it does this *before* the Homebrew Ruby is put on `PATH` (bash_profile sources bashrc first), so it locks in the system Ruby's gem path otherwise. Both `~/.bash_profile` and `bin/preview` re-run that same command after the `PATH` change to fix this.
+- **`GEM_HOME` must be recomputed after changing `PATH`.** `~/.bashrc` sets `GEM_HOME` by shelling out to `ruby -e 'puts Gem.user_dir'` — but it does this _before_ the Homebrew Ruby is put on `PATH` (bash_profile sources bashrc first), so it locks in the system Ruby's gem path otherwise. Both `~/.bash_profile` and `bin/preview` re-run that same command after the `PATH` change to fix this.
 - **Locale must be UTF-8.** Without `LANG`/`LC_ALL` set, Ruby defaults to US-ASCII and `bibtex-ruby` (used to render `_bibliography/papers.bib`) throws `invalid byte sequence in US-ASCII` during build. This is also set globally in `~/.bash_profile`.
 
 ## Deployment
@@ -26,14 +26,14 @@ Push to `main` → `.github/workflows/deploy.yml` builds the site with Ruby 3.3.
 
 ## Where content lives
 
-| Page | Source |
-|---|---|
-| About / bio | `_pages/about.md` |
-| Publications | `_bibliography/papers.bib` (BibTeX; rendered automatically via jekyll-scholar) |
-| Projects | `_projects/*.md` (one file per project card) |
-| Teaching | `_pages/teaching.md` |
-| CV | `_pages/cv.md` (points `cv_pdf:` at a file in `assets/pdf/`) — download-only by design, no `_data/cv.yml` (see below) |
-| Site title/bio one-liner, social links | `_config.yml`, `_data/socials.yml` |
+| Page                                   | Source                                                                                                                |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| About / bio                            | `_pages/about.md`                                                                                                     |
+| Publications                           | `_bibliography/papers.bib` (BibTeX; rendered automatically via jekyll-scholar)                                        |
+| Projects                               | `_projects/*.md` (one file per project card)                                                                          |
+| Teaching                               | `_pages/teaching.md`                                                                                                  |
+| CV                                     | `_pages/cv.md` (points `cv_pdf:` at a file in `assets/pdf/`) — download-only by design, no `_data/cv.yml` (see below) |
+| Site title/bio one-liner, social links | `_config.yml`, `_data/socials.yml`                                                                                    |
 
 ## Content provenance
 
